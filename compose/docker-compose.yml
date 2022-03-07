@@ -3,10 +3,10 @@ version: '3.1'
         
 services:
                 
-        rurails-landing-v2_app:
+        rurails-landing-v2-pool-app:
                         
-                build: ../build/rurails-landing-v2-app
-                container_name: rurails_landing_v2_app
+                build: ../build/rurails-landing-v2-pool-app
+                container_name: rurails-landing-v2-pool-app
                 depends_on:
                          - db
                 restart: always
@@ -18,18 +18,18 @@ services:
                 #                        devices:
                 #                                - capabilities: [gpu]
                 networks:
-                        - rurails_landingv2Net
+                        - rurails_landingv2poolNet
                 ports:
                         - "3000:3000"
         db:
                 image:  postgres
-                container_name: rurails_landing_v2_db
+                container_name: rurails-landing-v2-pool-db
                 volumes:
                         - ./tmp/db:/var/lib/postgresql/data
                 environment:
                         - "POSTGRES_HOST_AUTH_METHOD=trust"
                 networks:
-                        - rurails_landingv2Net
+                        - rurails_landingv2poolNet
 #        nginx:
 #                image: nginx:1.15-alpine
 #                restart: always
@@ -41,16 +41,16 @@ services:
 #                        - "80:80"
 #                        - "443:443"
 #                depends_on:
-#                        - rurails-landing-v2_app
+#                        - rurails-landing-v2-pool-app
 #                networks:
-#                        - rurails_landingv2Net
+#                        - rurails_landingv2poolNet
 #        certbot:
 #                image: certbot/certbot
 #                volumes:
 #                        - ./certbot/conf:/etc/letsencrypt
 #                        - ./certbot/www:/var/www/certbot
 #                networks:
-#                        - rurails_landingv2Net
+#                        - rurails_landingv2poolNet
 networks:
-        rurails_landingv2Net:
+        rurails_landingv2poolNet:
                 driver: bridge
