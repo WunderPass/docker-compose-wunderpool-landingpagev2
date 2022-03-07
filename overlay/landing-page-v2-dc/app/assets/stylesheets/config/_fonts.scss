@@ -1,0 +1,29 @@
+// Import Google fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito:400,700|Work+Sans:400,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700;800;900&display=swap');
+
+// Define fonts for body and headers
+$body-font: "Work Sans", "Helvetica", "sans-serif";
+$headers-font: "Nunito", "Helvetica", "sans-serif";
+$landing-header: "Maven Pro", "sans-serif";
+
+
+// To use a font file (.woff) uncomment following lines
+@font-face {
+  font-family: "jsMath-cmbx10 cmbx1";
+  font-style: normal;
+ font-weight: normal;
+  // src: font-url('FontFile.eot');
+  src:
+      // font-url('FontFile.eot?#iefix') format('embedded-opentype'),
+       font-url('jsMath-cmbx10.woff') format('woff'),
+      //  font-url('FontFile.ttf') format('truetype')
+}
+$my-font: "JS Font";
+
+// @font-face {
+// font-family: 'jsMath-cmbx10 cmbx10';
+// font-style: normal;
+// font-weight: normal;
+// src: local('jsMath-cmbx10 cmbx10'), url('jsMath-cmbx10.woff') format('woff');
+// }

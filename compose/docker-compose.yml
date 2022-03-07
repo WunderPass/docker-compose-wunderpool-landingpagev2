@@ -1,0 +1,56 @@
+version: '3.1'
+
+        
+services:
+                
+        rurails-landing-v2_app:
+                        
+                build: ../build/rurails-landing-v2-app
+                container_name: rurails_landing_v2_app
+                depends_on:
+                         - db
+                restart: always
+                volumes:
+                         - ../overlay/landing-page-v2-dc:/opt/landing-v2/landing-page-v2
+                #deploy:
+                #        resources:
+                #                reservations:
+                #                        devices:
+                #                                - capabilities: [gpu]
+                networks:
+                        - rurails_landingv2Net
+                ports:
+                        - "3000:3000"
+        db:
+                image:  postgres
+                container_name: rurails_landing_v2_db
+                volumes:
+                        - ./tmp/db:/var/lib/postgresql/data
+                environment:
+                        - "POSTGRES_HOST_AUTH_METHOD=trust"
+                networks:
+                        - rurails_landingv2Net
+#        nginx:
+#                image: nginx:1.15-alpine
+#                restart: always
+#                volumes:
+#                        - ./nginx/conf.d:/etc/nginx/conf.d
+#                        - ./certbot/conf:/etc/letsencrypt
+#                        - ./certbot/www:/var/www/certbot
+#                ports:
+#                        - "80:80"
+#                        - "443:443"
+#                depends_on:
+#                        - rurails-landing-v2_app
+#                networks:
+#                        - rurails_landingv2Net
+#        certbot:
+#                image: certbot/certbot
+#                volumes:
+#                        - ./certbot/conf:/etc/letsencrypt
+#                        - ./certbot/www:/var/www/certbot
+#                networks:
+#                        - rurails_landingv2Net
+networks:
+        rurails_landingv2Net:
+                driver: bridge

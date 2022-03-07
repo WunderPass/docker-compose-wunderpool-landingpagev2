@@ -1,0 +1,19 @@
+.navbar {
+  justify-content: space-between;
+  // background: linear-gradient(95deg, rgba(0,150,254,0.7) 25%, rgba(22, 82, 102, 0.7) 60%);
+  // background-image: linear-gradient(95deg, rgba(0,150,254,0.7) 25%, rgba(22, 82, 102, 0.7) 60%), url(Youtube-Cover-White.jpg);
+  background-size: cover;
+  object-fit: cover;
+}
+
+.navbar .navbar-collapse {
+  flex-grow: 0;
+}
+
+.navbar .navbar-brand img {
+  width: 160px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color: white;
+}

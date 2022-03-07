@@ -1,0 +1,21 @@
+<div class="navbar navbar-expand-sm navbar-light navbar">
+  <%= link_to root_path, class: "navbar-brand" do %>
+    <%= image_tag "wunderpass-logo-wide-white.png" %>
+  <% end %>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <%= link_to "Docs", "https://g-fricke.gitbook.io/wunderpass/", class: "nav-link" %>
+      </li>
+      <li class="nav-item">
+        <%= link_to "Pitch", "https://www.youtube.com/watch?v=8rdRBLcPVuY", class: "nav-link" %>
+      </li>
+    </ul>
+  </div>
+</div>

@@ -1,0 +1,56 @@
+.site-footer .footer-row {
+    color: #fff;
+    line-height: 2rem;
+    text-align: center;
+}
+
+
+.site-footer {
+    background-color: #0E0036;
+}
+
+
+
+
+.footer {
+  margin-top: 5px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: #0E0036;
+  color: white;
+}
+
+.links {
+  text-decoration: none;
+  justify-content: space-around;
+  color:#9aa3c1;
+}
+
+.header {
+  font-weight: 700px;
+}
+
+.links:hover {
+  text-decoration: none;
+}
+
+.footer .fab {
+  font-size: 34px;
+  color: #01BFFF;
+}
+
+.footer .fab:hover {
+  opacity: 0.4;
+}
+
+.footer p a {
+  color: white;
+  text-decoration: none;
+}
+
+#footer a {
+  color: white;
+  text-decoration: none;
+}
