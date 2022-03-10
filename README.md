@@ -12,3 +12,7 @@ and issue
     docker-compose up
 
 then visit localhost:3000
+
+
+Changes in overlay/... will be displayed real time on localhost:3000
+
