@@ -5,10 +5,10 @@
 
 go to 
 
-  cd compose/
+    cd compose/
 
 and issue
 
-  docker-compose up
+    docker-compose up
 
 then visit localhost:3000
