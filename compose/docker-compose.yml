@@ -20,7 +20,7 @@ services:
                 networks:
                         - rurails_landingv2poolNet
                 ports:
-                        - "3000:3000"
+                        - "3003:3000"
         db:
                 image:  postgres
                 container_name: rurails-landing-v2-pool-db
