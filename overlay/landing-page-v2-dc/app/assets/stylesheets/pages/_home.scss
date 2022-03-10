@@ -7,7 +7,7 @@ main {
 
   .taglines {
     text-align: center;
-    width: 80vw;
+    width: 45vw;
     .title {
       font-family: $landing-header;
       font-size: 48px;
@@ -41,6 +41,12 @@ main {
   font-family: $landing-header;
 }
 
+.bannerGrid {
+  display: grid;
+  grid-template-columns: auto auto;
+  background-color: #ecf1fa;
+}
+
 .grid_container1 {
   display: grid;
   grid-template-columns: 50vw 50vw;
@@ -51,6 +57,64 @@ main {
   grid-template-columns: auto auto auto auto;
   grid-column-gap: 4vw;
 }
+
+.smallGrid {
+	display: grid;
+	grid-template-columns: 30% 70%;
+}
+.smallGridBanner {
+        display: grid;
+        grid-template-columns: auto auto;
+}
+
+
+.setUpPoolGrid {
+	display: grid;
+	grid-template-columns: auto auto;
+}
+.apeTogetherGrid {
+        display: grid;
+        grid-template-columns: auto auto;
+}
+
+
+.whatsInIt4meGrid {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	grid-column-gap: 2em;
+}
+.whatsInIt4meGridContainer {
+        margin-left: 8em;
+        margin-right: 8em;
+        margin-bottom: 4em;
+        margin-top: 2em;
+}
+
+.apeTogetheritem2 {
+	display: flex;
+	justify-content: center;
+}
+
+.whatsInIt4meGriditemBG {
+	background-image: image-url('whatsInIt4meBG');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+	height: 50vh;
+	border-radius: 0.5em;
+}
+
+.setUpPoolitem2 {
+	display: flex;
+ 	vertical-align: middle;
+}
+
+.setUpPoolitem3 {
+        display: flex;
+}
+
 
 .item1_1 {
 	vertical-align: middle;
@@ -71,6 +135,35 @@ main {
     }
 .section_header {
 	text-align: left;
+}
+
+.oneHandleSection {
+	background-color: #334058;
+}
+
+.banneritem1 {
+	width: 45vw;
+	margin-left: 5vw;
+}
+.banneritem2 {
+	width: 50vw;
+}
+
+.item1_1_oneHandleSect {
+	background-image: image-url('background_item1_oneHandleSect');
+        background-size: 90%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-color: #334058;
+	display: flex;
+}
+
+.setUpPoolSection {
+	background-color: #e9f5ff;
+}
+
+.apeTogetherSection {
+	background-color: #0096FA;
 }
 
 .section2 {
@@ -99,6 +192,16 @@ main {
 
 .section5 {
 	background-color: #e9f5ff;
+}
+
+.bannerh1 {
+	font-size: 3rem;
+	font-weight: 700;
+	transition: all 1.1s ease;
+}
+.bannerText {
+	font-size: 1rem;
+	font-weight: 600;
 }
 
 @media (max-width: 540px) {
@@ -140,6 +243,55 @@ main {
 	    margin-left: auto;
 	    margin-right: auto;
     }
+    .setUpPoolGrid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .apeTogetherGrid {
+        display: grid;
+        grid-template-columns: auto;
+    }
+    .apeTogetheritem2 {
+	grid-row-start: 1;
+    }
+    .setUpPoolitem2 {
+	grid-row-start: 1;
+    }
+    .whatsInIt4meGrid {
+        display: grid;
+        grid-template-columns: auto;
+        grid-column-gap: 4em;
+	grid-row-gap: 4em;
+	}
+    .whatsInIt4meGridContainer {
+        margin-left: 4em;
+        margin-right: 4em;
+        justify-content: center;
+    }
+    .whatsInIt4meGriditemBG {
+        background-image: image-url('whatsInIt4meBG');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        display: flex;
+        justify-content: center;
+        height: 30vh;
+        border-radius: 0.5em;
+    }
+    .bannerGrid {
+      display: grid;
+      grid-template-columns: auto;
+      background-color: #ecf1fa;
+    }
+    .banneritem1 {
+        width: 95vw;
+        align-items: center;
+    }
+    .banneritem2 {
+        width: 100vw;
+	align-items: center;
+    }
+
 
 }
 

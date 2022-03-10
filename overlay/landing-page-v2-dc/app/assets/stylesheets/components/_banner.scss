@@ -1,15 +1,12 @@
 .banner {
-  height: 90vh;
-  background-image: linear-gradient(95deg, rgba(0,150,254,0.7) 25%, rgba(22, 82, 102, 0.7) 60%), image-url(Youtube-Cover-White);
-  background-size: cover;
-  object-fit: cover;
+  background-color: #ecf1fa;
   text-align: center;
   // display: flex;
   align-items: center;
   justify-content: space-around;
-  color: white;
+  color: black;
   .taglines {
-    padding: 201px;
+    padding: 101px;
     text-align: center;
     .title {
       font-family: $landing-header;
